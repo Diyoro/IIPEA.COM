@@ -1,0 +1,43 @@
+from .views import (Home,
+                     Contact,
+                     Blog, 
+                     Event,
+                     About2,
+                     Instructor, 
+                     Index2, 
+                     Index3, 
+                     Instructor2, 
+                     Instructor_details, 
+                     Event_single, 
+                     Erreur, 
+                     Courses,
+                     Courses_sidebar, 
+                     Single_course, 
+                     Blog_full,
+                     Blog_standard,
+                     Blog_single,
+                     About)
+
+from django.contrib import admin
+from django.urls import path, include
+urlpatterns = [  
+   path('', Home,name="home"),
+   path('contat/', Contact,name="contact"),
+   path('blog/', Blog,name="blog"),
+   path('event/', Event,name="event"),
+   path('about2/', About2, name="about2" ),
+   path('instructor/', Instructor, name="instructor" ),
+   path('index2/', Index2, name="index2" ),
+   path('index3/', Index3, name="index3" ),
+   path('instructor2/', Instructor2, name="instructor2" ),
+   path('instructor-details/', Instructor_details, name="instructor-details" ),
+   path('event/', Event_single,name="event-single"),
+   path('404/', Erreur,name="404"),
+   path('courses/', Courses,name="courses"),
+   path('courses-sidebar/', Courses_sidebar,name="courses-sidebar"),
+   path('single-course/', Single_course,name="single-course"),
+   path('blog-full/', Blog_full,name="blog-full"),
+   path('blog-standard/', Blog_standard,name="blog-standard"),
+   path('blog-single/', Blog_single,name="blog-single"),
+   path('about/', About, name="about")
+]

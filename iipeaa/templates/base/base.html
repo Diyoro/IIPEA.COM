@@ -1,0 +1,266 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from bestwpware.com/html/tf/edumim/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Feb 2023 20:14:08 GMT -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>EduMim Html Template</title>
+  <link rel="icon" type="image/png" href="{% static 'sites/assets/images/logo/favicon.html">
+  <link rel="stylesheet" href="{% static 'sites/assets/css/rt-plugins.css' %}">
+  <link rel="stylesheet" href="{% static 'sites/assets/css/app.css' %}">
+</head>
+
+<body class=" font-gilroy font-medium text-gray text-lg leading-[27px]">
+  <!-- [if IE]> <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+    </p> <![endif] -->
+
+  <header class="site-header  home-one-header top-0 w-full z-[999] rt-sticky">
+    <div class="main-header py-6">
+      <div class="container">
+        <div class=" flex items-center justify-between">
+          <a href="index.html" class="brand-logo flex-none lg:mr-10 md:w-auto max-w-[120px] ">
+            <img src="{% static 'sites/assets/images/logo/logo.svg' %}" alt=""></a>
+          <div class="flex items-center flex-1">
+            <div class="flex-1 main-menu relative mr-[74px]">
+              <ul class="menu-active-classes">
+                <li class=" menu-item-has-children">
+                  <a href="#">Home</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="index.html">Home One</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'index2' %}">Home Two</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'index3' %}">Home Three</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Pages</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="{% url 'about' %}">About 1</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'about2' %}">About 2</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'instructor' %}">instructor 1</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'instructor2' %}">instructor 2</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'instructor-details' %}">instructor Single</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'event' %}">Event</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'event-single' %}">Event single</a>
+                    </li>
+                    <li>
+                      <a href="{% url '404' %}">404</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Courses</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="{% url 'courses' %}">courses</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'courses-sidebar' %}">courses Sidebar</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'single-course' %}">Single-course</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Blog</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="{% url 'blog' %}">Blog</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'blog-full' %}">Full Width</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'blog-standard' %}">Blog Standard</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'blog-single' %}">Single Blog</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="{% url 'contact' %}">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-none flex space-x-[18px]">
+              <div class=" hidden lg:block">
+                <a href="#" class="btn btn-primary py-[15px] px-8">Start Free Trial</a>
+                <a href="#" class="btn btn-primary py-[15px] px-8">Counter</a>
+              </div>
+              <div class=" block   lg:hidden">
+                <button type="button" class=" text-3xl md:w-[56px] h-10 w-10 md:h-[56px] rounded bg-[#F8F8F8] flex flex-col items-center justify-center
+                                        menu-click">
+                  <iconify-icon icon="cil:hamburger-menu" rotate="180deg"></iconify-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+ 
+  
+  {% block content %}
+    
+  {% endblock content %}
+    
+
+  <footer class="bg-black bg-[url('https://bestwpware.com/html/tf/images/all-img/footer-bg-1.png')] bg-cover bg-center bg-no-repeat">
+    <div class="section-padding container">
+      <div class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+        <div class="single-footer">
+          <div class="lg:max-w-[270px]">
+            <a href="#" class="mb-10 block">
+              <img src="{% static 'sites/assets/images/logo/footer-logo.svg' %}" alt="">
+            </a>
+            <p>
+              Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis
+              cursus.
+            </p>
+            <ul class="flex space-x-4 pt-8">
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:instagram"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="single-footer">
+          <div class="flex space-x-[80px]">
+            <div class="flex-1 lg:flex-none">
+              <h4 class="mb-8 text-2xl font-bold text-white">Links</h4>
+              <ul class="list-item space-y-5">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
+                <li>
+                  <a href="#">Courses</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1 lg:flex-none">
+              <h4 class="mb-8 text-2xl font-bold text-white">Legal</h4>
+              <ul class="list-item space-y-5">
+                <li>
+                  <a href="#">Legal</a>
+                </li>
+                <li>
+                  <a href="#">Tearms of Use</a>
+                </li>
+                <li>
+                  <a href="#">Tearm & Condition</a>
+                </li>
+                <li>
+                  <a href="#">Payment Method</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="single-footer">
+          <h4 class="mb-8 text-2xl font-bold text-white">Newsletter</h4>
+          <div class="mb-8">
+            Join over
+            <span class="text-primary underline">68,000</span>
+            people getting our emails Lorem ipsum dolor sit amet consectet
+          </div>
+          <div class="mb-4 flex items-center rounded-md bg-white py-[10px] pr-[10px] pl-6 shadow-e1">
+            <div class="flex-none">
+              <span class=" ">
+              <img src="{% static 'sites/assets/images/icon/mail.svg' %}" alt="">
+            </span>
+            </div>
+            <div class="flex-1">
+              <input type="text" placeholder="Enter your mail" class="border-none focus:ring-0">
+            </div>
+          </div>
+          <button class="btn btn-primary block w-full text-center">
+            Subscribe Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container border-t border-white border-opacity-[0.1] py-8 text-center text-base">
+      &copy; Copyright 2022 | Edumim Template | All Rights Reserved
+    </div>
+  </footer>
+
+  <div class="rt-mobile-menu-overlay"></div>
+  <!-- scripts -->
+  <script src="{% static 'sites/assets/js/popper.min.js' %}"></script>
+  <script src="{% static 'sites/assets/js/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static 'sites/assets/js/rt-plugins.js' %}"></script>
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js' %}"></script>
+  <script src="{% static 'sites/assets/js/app.js' %}"></script>
+</body>
+
+<!-- Mirrored from bestwpware.com/html/tf/edumim/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Feb 2023 20:15:20 GMT -->
+</html>

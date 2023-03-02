@@ -1,0 +1,523 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+
+
+  <div class="openmobile-menu fixed top-0 h-screen pt-10 pb-6 bg-white shadow-box2 w-[320px] overflow-y-auto flex flex-col
+        z-[999]">
+    <div class="flex justify-between px-6 flex-none">
+      <a href="index.html" class="brand-logo flex-none mr-10 ">
+        <img src="{% static 'sites/assets/images/logo/logo.svg' %}" alt="">
+      </a>
+      <span class=" text-3xl text-black cursor-pointer rt-mobile-menu-close">
+            <iconify-icon icon="fe:close"></iconify-icon>
+        </span>
+    </div>
+    <div class="mobile-menu mt-6 flex-1 ">
+      <ul class="menu-active-classes">
+        <li class=" menu-item-has-children">
+          <a href="#">Home</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="index.html">Home One</a>
+            </li>
+            <li>
+              <a href="index2.html">Home Two</a>
+            </li>
+            <li>
+              <a href="index3.html">Home Three</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Pages</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="about.html">About 1</a>
+            </li>
+            <li>
+              <a href="about2.html">About 2</a>
+            </li>
+            <li>
+              <a href="instructor.html">instructor 1</a>
+            </li>
+            <li>
+              <a href="instructor2.html">instructor 2</a>
+            </li>
+            <li>
+              <a href="instructor-details.html">instructor Single</a>
+            </li>
+            <li>
+              <a href="event.html">Event</a>
+            </li>
+            <li>
+              <a href="event-single.html">Event single</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Courses</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="courses.html">courses</a>
+            </li>
+            <li>
+              <a href="courses-sidebar.html">courses Sidebar</a>
+            </li>
+            <li>
+              <a href="single-course.html">Single-course</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Blog</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="blog-full.html">Full Width</a>
+            </li>
+            <li>
+              <a href="blog-standard.html">Blog Standard</a>
+            </li>
+            <li>
+              <a href="blog-single.html">Single Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class=" flex-none pb-4">
+      <div class=" text-center text-black font-semibold mb-2">Follow Us</div>
+      <ul class="flex space-x-4 justify-center ">
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="{% static 'sites/assets/images/icon/fb.svg' %}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="{% static 'sites/assets/images/icon/tw.svg' %}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="{% static 'sites/assets/images/icon/pn.svg' %}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="{% static 'sites/assets/images/icon/ins.svg' %}" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="breadcrumbs section-padding bg-[url('https://bestwpware.com/html/tf/images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
+    <div class="container text-center">
+      <h2>Instructor</h2>
+      <nav>
+        <ol class="flex items-center justify-center space-x-3">
+          <li class="breadcrumb-item"><a href="index.html">Pages </a></li>
+          <li class="breadcrumb-item">-</li>
+          <li class="text-primary">Instructor 1</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- team start -->
+  <div class=" section-padding">
+    <div class="container">
+      <div class="text-center">
+        <div class="mini-title">Team Member</div>
+        <div class="column-title ">
+          Our Expert
+          <span class="shape-bg">Instructors</span>
+        </div>
+      </div>
+      <div class="grid xl:grid-cols-4 lg:grid-cols-3  sm:grid-cols-2 grid-cols-1 gap-7 pt-10">
+
+
+        <div class=" bg-white shadow-box3 rounded-[8px] transition-all duration-100 pt-10 pb-[28px] px-6 text-center hover:shadow-box4
+                            border-t-4 border-transparent hover:border-primary ">
+          <div class="w-[170px] h-[170px] rounded-full  relative mx-auto mb-8">
+            <img src="{% static 'sites/assets/images/all-img/team1.png' %}" alt="" class=" w-full h-full object-cover rounded-full">
+          </div>
+          <div class="course-content">
+            <h4 class=" text-2xl mb-1 font-bold">Erics Widget</h4>
+            <div>UI/UX Designer</div>
+            <ul class="space-x-4 flex justify-center pt-6">
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-red-paste text-primary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-green-paste text-secondary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-secondary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-[#EEE8FF] text-#8861DB flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-[#8861DB] hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class=" bg-white shadow-box3 rounded-[8px] transition-all duration-100 pt-10 pb-[28px] px-6 text-center hover:shadow-box4
+                            border-t-4 border-transparent hover:border-primary ">
+          <div class="w-[170px] h-[170px] rounded-full  relative mx-auto mb-8">
+            <img src="{% static 'sites/assets/images/all-img/team2.png' %}" alt="" class=" w-full h-full object-cover rounded-full">
+          </div>
+          <div class="course-content">
+            <h4 class=" text-2xl mb-1 font-bold">Daniel Steven</h4>
+            <div>UI/UX Designer</div>
+            <ul class="space-x-4 flex justify-center pt-6">
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-red-paste text-primary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-green-paste text-secondary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-secondary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-[#EEE8FF] text-#8861DB flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-[#8861DB] hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class=" bg-white shadow-box3 rounded-[8px] transition-all duration-100 pt-10 pb-[28px] px-6 text-center hover:shadow-box4
+                            border-t-4 border-transparent hover:border-primary ">
+          <div class="w-[170px] h-[170px] rounded-full  relative mx-auto mb-8">
+            <img src="{% static 'sites/assets/images/all-img/team3.png' %}" alt="" class=" w-full h-full object-cover rounded-full">
+          </div>
+          <div class="course-content">
+            <h4 class=" text-2xl mb-1 font-bold">Nelson Decosta</h4>
+            <div>UI/UX Designer</div>
+            <ul class="space-x-4 flex justify-center pt-6">
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-red-paste text-primary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-green-paste text-secondary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-secondary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-[#EEE8FF] text-#8861DB flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-[#8861DB] hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class=" bg-white shadow-box3 rounded-[8px] transition-all duration-100 pt-10 pb-[28px] px-6 text-center hover:shadow-box4
+                            border-t-4 border-transparent hover:border-primary ">
+          <div class="w-[170px] h-[170px] rounded-full  relative mx-auto mb-8">
+            <img src="{% static 'sites/assets/images/all-img/team4.png' %}" alt="" class=" w-full h-full object-cover rounded-full">
+          </div>
+          <div class="course-content">
+            <h4 class=" text-2xl mb-1 font-bold">Selina Gomez</h4>
+            <div>UI/UX Designer</div>
+            <ul class="space-x-4 flex justify-center pt-6">
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-red-paste text-primary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-green-paste text-secondary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-secondary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-[#EEE8FF] text-#8861DB flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-[#8861DB] hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class=" bg-white shadow-box3 rounded-[8px] transition-all duration-100 pt-10 pb-[28px] px-6 text-center hover:shadow-box4
+                            border-t-4 border-transparent hover:border-primary ">
+          <div class="w-[170px] h-[170px] rounded-full  relative mx-auto mb-8">
+            <img src="{% static 'sites/assets/images/all-img/team5.png' %}" alt="" class=" w-full h-full object-cover rounded-full">
+          </div>
+          <div class="course-content">
+            <h4 class=" text-2xl mb-1 font-bold"> Michle Collins</h4>
+            <div>UI/UX Designer</div>
+            <ul class="space-x-4 flex justify-center pt-6">
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-red-paste text-primary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-green-paste text-secondary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-secondary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-[#EEE8FF] text-#8861DB flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-[#8861DB] hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class=" bg-white shadow-box3 rounded-[8px] transition-all duration-100 pt-10 pb-[28px] px-6 text-center hover:shadow-box4
+                            border-t-4 border-transparent hover:border-primary ">
+          <div class="w-[170px] h-[170px] rounded-full  relative mx-auto mb-8">
+            <img src="{% static 'sites/assets/images/all-img/team6.png' %}" alt="" class=" w-full h-full object-cover rounded-full">
+          </div>
+          <div class="course-content">
+            <h4 class=" text-2xl mb-1 font-bold">Jackline Deo</h4>
+            <div>UI/UX Designer</div>
+            <ul class="space-x-4 flex justify-center pt-6">
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-red-paste text-primary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-green-paste text-secondary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-secondary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-[#EEE8FF] text-#8861DB flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-[#8861DB] hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class=" bg-white shadow-box3 rounded-[8px] transition-all duration-100 pt-10 pb-[28px] px-6 text-center hover:shadow-box4
+                            border-t-4 border-transparent hover:border-primary ">
+          <div class="w-[170px] h-[170px] rounded-full  relative mx-auto mb-8">
+            <img src="{% static 'sites/assets/images/all-img/team7.png' %}" alt="" class=" w-full h-full object-cover rounded-full">
+          </div>
+          <div class="course-content">
+            <h4 class=" text-2xl mb-1 font-bold">Stiphen Robert</h4>
+            <div>UI/UX Designer</div>
+            <ul class="space-x-4 flex justify-center pt-6">
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-red-paste text-primary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-green-paste text-secondary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-secondary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-[#EEE8FF] text-#8861DB flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-[#8861DB] hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class=" bg-white shadow-box3 rounded-[8px] transition-all duration-100 pt-10 pb-[28px] px-6 text-center hover:shadow-box4
+                            border-t-4 border-transparent hover:border-primary ">
+          <div class="w-[170px] h-[170px] rounded-full  relative mx-auto mb-8">
+            <img src="{% static 'sites/assets/images/all-img/team8.png' %}" alt="" class=" w-full h-full object-cover rounded-full">
+          </div>
+          <div class="course-content">
+            <h4 class=" text-2xl mb-1 font-bold">Daiyan Steven</h4>
+            <div>UI/UX Designer</div>
+            <ul class="space-x-4 flex justify-center pt-6">
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-red-paste text-primary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-green-paste text-secondary flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-secondary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" h-10 w-10 rounded bg-[#EEE8FF] text-#8861DB flex flex-col justify-center items-center text-2xl transition
+                                                hover:bg-[#8861DB] hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- testtimonal start -->
+  <div class=" section-padding bg-[url('https://bestwpware.com/html/tf/images/all-img/section-bg-12.png')] bg-cover  bg-no-repeat">
+    <div class="container">
+      <div class="grid  lg:grid-cols-2 grid-cols-1  xl:gap-[60px] gap-6">
+        <div>
+          <div class="slider-nav">
+            <div class="single-item">
+              <div class="xl:h-[593px] lg:h-[400px] h-[150px] lg:w-full w-[150px] rounded-md">
+                <img src="{% static 'sites/assets/images/all-img/t1.png' %}" alt="" class=" object-cover w-full h-full rounded-md" />
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="xl:h-[593px] lg:h-[400px] h-[150px] lg:w-full w-[150px]  rounded-md">
+                <img src="{% static 'sites/assets/images/all-img/t1.png' %}" alt="" class=" object-cover w-full h-full rounded-md" />
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="xl:h-[593px] lg:h-[400px] h-[150px] lg:w-full w-[150px]  rounded-md">
+                <img src="{% static 'sites/assets/images/all-img/t1.png' %}" alt="" class=" object-cover w-full h-full rounded-md" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="mini-title">Testimonial</div>
+          <h4 class="column-title ">
+            Our Tallented Students Valuable
+            <span class="shape-bg text-black">
+                Feedback</span>
+          </h4>
+          <div class="slider-for mt-10">
+            <div class="single-item">
+              <div>
+                <h3 class=" text-2xl font-bold text-black mb-8">“It’s Truly The Best Solution For Me”</h3>
+                <div class="mb-8">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered. There are many
+                  variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+                </div>
+                <div>
+                  <span class=" block  font-semibold text-black mb-1">Alfred Helmerich</span>
+                  <span class=" block  font-semibold text-primary">Executive Training Manager</span>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div>
+                <h3 class=" text-2xl font-bold text-black mb-8">“It’s Truly The Best Solution For Me”</h3>
+                <div class="mb-8">
+                  There are many variations of passages of Lorem Ipsum available,
+                </div>
+                <div>
+                  <span class=" block  font-semibold text-black mb-1">Alfred Helmerich</span>
+                  <span class=" block  font-semibold text-primary">Executive Training Manager</span>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div>
+                <h3 class=" text-2xl font-bold text-black mb-8">“It’s Truly The Best Solution For Me”</h3>
+                <div class="mb-8">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+                </div>
+                <div>
+                  <span class=" block  font-semibold text-black mb-1">Alfred Helmerich</span>
+                  <span class=" block  font-semibold text-primary">Executive Training Manager</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space-x-5 flex lg:mt-10 mt-8">
+            <button class="lg:h-[64px] lg:w-[64px] h-12 w-12 flex flex-col items-center justify-center rounded-md bg-white hover:bg-primary
+                    hover:text-white shadow-box slickprev text-3xl text-primary">
+              <iconify-icon icon="heroicons:arrow-left-20-solid"></iconify-icon>
+            </button>
+            <button class="lg:h-[64px] lg:w-[64px] h-12 w-12 flex flex-col items-center justify-center rounded-md bg-white hover:bg-primary
+                    hover:text-white shadow-box slickprev text-3xl text-primary">
+              <iconify-icon icon="heroicons:arrow-right-20-solid"></iconify-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container  section-padding-top">
+      <div class="text-center text-black text-2xl font-medium mb-[50px]">
+        Trusted By 1k+ Company Arround The World!
+      </div>
+
+      <ul class="flex flex-wrap items-center lg:justify-between justify-center  ">
+
+        <li class=" mb-6 last:mb-0 mr-6 last:mr-0  transition duration-150 grayscale-[80] hover:grayscale-0 ">
+          <a href="#" class=" block">
+            <img src="{% static 'sites/assets/images/all-img/brands/1.svg' %}" alt=""></a>
+        </li>
+
+        <li class=" mb-6 last:mb-0 mr-6 last:mr-0  transition duration-150 grayscale-[80] hover:grayscale-0 ">
+          <a href="#" class=" block">
+            <img src="{% static 'sites/assets/images/all-img/brands/2.svg' %}" alt=""></a>
+        </li>
+
+        <li class=" mb-6 last:mb-0 mr-6 last:mr-0  transition duration-150 grayscale-[80] hover:grayscale-0 ">
+          <a href="#" class=" block">
+            <img src="{% static 'sites/assets/images/all-img/brands/3.svg' %}" alt=""></a>
+        </li>
+
+        <li class=" mb-6 last:mb-0 mr-6 last:mr-0  transition duration-150 grayscale-[80] hover:grayscale-0 ">
+          <a href="#" class=" block">
+            <img src="{% static 'sites/assets/images/all-img/brands/4.svg' %}" alt=""></a>
+        </li>
+
+        <li class=" mb-6 last:mb-0 mr-6 last:mr-0  transition duration-150 grayscale-[80] hover:grayscale-0 ">
+          <a href="#" class=" block">
+            <img src="{% static 'sites/assets/images/all-img/brands/5.svg' %}" alt=""></a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+
+{% endblock content %}
